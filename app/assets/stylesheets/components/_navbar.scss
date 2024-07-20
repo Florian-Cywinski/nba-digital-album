@@ -1,0 +1,57 @@
+// wrapper for the flexbox in the navbar
+#wrapper {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    // background-color: rgb(51, 58, 58);
+}
+
+// flexbox for the navbar elements
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+#nav-left-img {
+    height: auto; // takes the same size of the div element (parent element)
+    img {
+        height: 75px;
+        // resize of the img to fit in the div
+    }
+}
+
+// this is to make the avatar an rounded image
+#image--cover {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#login-button {
+    text-align: center;
+    background-color: white;
+    border: none;
+    color: rgb(29, 66, 138);
+    text-decoration: none;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    display: block;
+    box-shadow: 7px 0px 0px rgb(200, 16, 46), -7px 0px 0px rgb(29, 66, 138);
+    font-size: large;
+}
+
+#login-button:hover {
+    color: rgb(200, 16, 46);
+}
+
+.nba-digital-album-logo {
+    margin-left: -10px;
+    font-family: Helvetica !important;
+}

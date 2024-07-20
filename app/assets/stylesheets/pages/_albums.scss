@@ -1,0 +1,137 @@
+#albums-background {
+    height: 80vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://media.istockphoto.com/photos/interior-view-of-an-illuminated-basketball-stadium-for-a-game-picture-id1306357558?b=1&k=20&m=1306357558&s=170667a&w=0&h=P_UxEO4qOY8GD81SVMhEqZ3LrcAVITlBeZ8aF0pRTX0=");
+    background-position: center;
+    background-size: cover;
+    padding: 0 24px;
+}
+
+.album-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+    text-decoration: none;
+    border-radius: 5px 5px 0 0;
+}
+
+.albums-grid-one {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 80px;
+    justify-content: center;
+}
+
+.albums-grid-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+    justify-content: center;
+}
+
+.albums-grid-three {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 80px;
+    padding: 24px 0;
+    justify-content: space-evenly;
+}
+
+.albums-grid-four {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 80px;
+    padding: 24px 0;
+    justify-content: space-evenly;
+}
+
+.album-image {
+    width: 300px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 3px;
+    border: 2px solid whitesmoke;
+    transition: ease-out 0.2s;
+}
+
+.album-image:hover {
+    // width: 375px;
+    // height: 500px;
+    transform: scale(1.05);
+}
+
+.album-basic-info {
+    text-align: center;
+    text-justify: center;
+    // background: url(https://media4.giphy.com/media/10rtoKqcDukJgc/200w.webp?cid=ecf05e47p7a3d91i9puvwhsh8v8tp3oksswyukjnh6mb4pis&rid=200w.webp&ct=g);
+    // background: url(http://www.zingerbugimages.com/backgrounds/blue_christmas_lights_out_of_focus_seamless_texture.jpg);
+    background: url(https://media.istockphoto.com/photos/gold-leaf-glitter-pattern-washi-paper-texture-background-picture-id1340381948?b=1&k=20&m=1340381948&s=170667a&w=0&h=FE8iKKL5CKkMQb8zAnZwMbap3Rn7uIkIskL2hAg5rzE=);
+    border: 2px solid rgb(29, 66, 138);
+    border-top: unset;
+    h2 {
+        font-size: 28px;
+        color: black;
+    }
+    p {
+        font-size: 22px;
+        color: rgb(29, 66, 138);
+    }
+}
+
+.album-link {
+    text-decoration: none;
+}
+
+.albums-header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+/* Design of the albums page when there are no albums yet */
+
+.no-albums-header {
+    padding-top: 70px;
+}
+
+.no-album-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 70px;
+    text-decoration: none;
+    border-radius: 5px 5px 0 0;
+}
+
+
+/* Dropdown Button */
+
+.dropdown {
+    // position: relative;
+    // display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+.no-albums-button {
+    // background-color: #C8102E;
+    background-color: $red;
+    padding: 10px 135px;
+    // padding: 10px 18vw;
+    transition: all ease 0.5s;
+    border-style: none;
+    margin-top: 100px;
+}
+
+.no-albums-button-hover {
+    color: white;
+    background-color: $gold;
+}
+
+.no-albums-dropdown-menu {
+    border-radius: unset !important;
+    --bs-dropdown-min-width: 15rem !important;
+    // --bs-dropdown-min-width: 25rem !important;
+    text-align: center !important;
+    margin-left: 80px !important;
+}
